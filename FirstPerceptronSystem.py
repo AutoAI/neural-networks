@@ -2,8 +2,7 @@
 import random as r
 
 
-#Nodes, that can have an array of other nodes
-
+#Nodes, that can have an array of other nodes sai
 
 class Node:
     def __init__(inList):
