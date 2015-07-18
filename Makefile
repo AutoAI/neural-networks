@@ -1,7 +1,7 @@
 all: main
 
 main: main.o neural_network.o neuron.o
-	g++ main.o neural_network.o neuron.o
+	g++ main.o neural_network.o neuron.o -o main
 
 main.o: main.cc
 	g++ -c main.cc
