@@ -4,14 +4,9 @@
 #include "neural_network.h"
 
 NeuralNetwork::NeuralNetwork(int inputs, int layers, std::vector<double>* trainingInputs, std::vector<double>* trainingOutputs) {
-	std::cout << "started constructor" << std::endl;
-	std::cout << inputs << std::endl;
 	std::vector<Neuron*> neurons(inputs);
-	std::cout << inputs << std::endl;
 	for (int layer = 0; layer < layers; layer++) {
-		std::cout << "loop started layer: " << layer << std::endl;
 		for (int input = 0; input < inputs; input++) {
-			std::cout << "input: " << input << std::endl;
 			if (layer == 0) {
 				Neuron* n = new Neuron(inputs);
 				neurons[input] = n;
