@@ -11,4 +11,6 @@ public:
 
 private:
 	std::vector<Neuron*>* inputs;
+	double val;
+
 };
