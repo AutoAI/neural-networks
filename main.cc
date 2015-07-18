@@ -10,4 +10,5 @@ int main(int argc, char** args) {
 	std::vector<double> answers;
 	NeuralNetwork a(2, 4, &training, &answers);
 	a.printNetwork();
+	return 0;
 }
