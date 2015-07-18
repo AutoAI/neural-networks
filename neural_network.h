@@ -5,7 +5,7 @@
 
 class NeuralNetwork {
 public:
-	NeuralNetwork(int inputs, int layers, std::vector<double>* trainingInputs, std::vector<double>* trainingOutputs);
+	NeuralNetwork(int inputs, int layers, std::vector<Neuron>* trainingInputs, std::vector<Neuron>* trainingOutputs);
 	std::vector<double> compute(std::vector<double> inputs);
 	void printNetwork();
 private:
