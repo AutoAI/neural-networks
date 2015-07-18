@@ -6,8 +6,9 @@
 #include "neuron.h"
 
 int main(int argc, char** args) {
-	std::vector<double> training;
-	std::vector<double> answers;
+	std::vector<Neuron> training;
+	std::vector<Neuron> answers;
 	NeuralNetwork a(2, 4, &training, &answers);
 	a.printNetwork();
+	return 0;
 }

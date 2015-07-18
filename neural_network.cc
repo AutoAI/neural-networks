@@ -3,7 +3,7 @@
 
 #include "neural_network.h"
 
-NeuralNetwork::NeuralNetwork(int inputs, int layers, std::vector<double>* trainingInputs, std::vector<double>* trainingOutputs) {
+NeuralNetwork::NeuralNetwork(int inputs, int layers, std::vector<Neuron>* trainingInputs, std::vector<Neuron>* trainingOutputs) {
 	std::vector<Neuron*> neurons(inputs);
 	for (int layer = 0; layer < layers; layer++) {
 		for (int input = 0; input < inputs; input++) {
